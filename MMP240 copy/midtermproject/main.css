@@ -1,0 +1,87 @@
+body{
+    text-align: left;
+}
+header{
+    font-size: 90px;
+    padding-left: 30px;
+    color: black;
+    font-family: 'Righteous', cursive;
+}
+p{
+    
+    width: 90%;
+    margin: 10px auto;
+    font-family: 'Source Sans Pro', sans-serif;
+   
+    margin-top: 20px;
+}
+h1{
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+    color:black;
+    text-align: left;
+    margin-top: 40px;
+}
+.container {
+    position: relative;
+    margin-bottom:30px;
+}
+.text-block {
+    position: absolute;
+    bottom:25px;
+    left: 5%;
+    right: 5%;
+    background-color: black;
+    opacity: 0.75;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h2{
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+    margin: 15px auto;
+}
+h3{
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+    margin: 15px auto;
+}
+h4{
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-left: 20px;
+}
+h5{
+    font-size:30px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+h6{
+    font-size: 20px;
+    margin-top: 20px;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h7{
+    font-size: 23px;
+    margin-top: 20px;
+    color: black;
+    padding-left: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+footer{
+    margin-bottom: 30px;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+section{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    color: #5E5E5E;
+    margin-top: 10px;
+}
