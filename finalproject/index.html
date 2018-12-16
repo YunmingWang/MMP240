@@ -1,69 +1,101 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset=utf-8 />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Go Paws</title>
         <link rel="stylesheet" type="text/css" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin:500" rel="stylesheet">
+
     <style>
-        aside img{
-            height: 300px;
-            width: 100%;
-           
-        }
+        
         aside{
             float: left;
             text-align: center;
             width: 50%;
             font-size: 25px;
-            padding-top:20px;
+            padding-top:5px;
+            font-family: 'Quicksand', sans-serif;
+            color:#1A5281;
             
+        }
+        aside p{
+            padding-left: 40px;
+            padding-right: 10px;
+            font-size: 20px;
+            text-align: left;
+            color: black;
+            font-family: 'Cabin', sans-serif;
         }
         article{
             float: right;
-            height: 300px;
-            width:40%;
+            font-family: 'Quicksand', sans-serif;
+           text-align: center;
+            width: 50%;
             font-size: 25px;
-/*          background-color: #cccccc;*/
-            margin-bottom: 20px;
-            text-align: center;
-            padding-top: 20px;
+            padding-top:5px;
+            color:#1A5281;
         }
         article p{
-            margin-left: 10px;
-            padding-top: 0.03px;
+           padding-left: 40px;
+            padding-right: 10px;
+            font-size: 20px;
+            text-align: left;
+            color: black;
+            font-family: 'Cabin', sans-serif;
         }
-        article img{
-            height: 400px;
-            width: 95%;
-        }
-/*
+        
         footer{
-                height: 200px;
-                background-color:#cccccc;
+                height: 30px;
+                background-color:#1A5281;
                 clear: both;
                 padding-top: 10px;
                 font-size: 25px;
                 text-align: center;
             }
-*/
        
-        }
     </style>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="booknow.html">Book Now</a></li>
-                <li><a href="contact.html">Contact Us</a></li> 
-            </ul>
-        </nav>
+       
+            <div id="mysidenav" class="sidenav">
+                <a href="index.html" id="Home">Home</a>
+                <a href="pricing.html" id="Pricing">Pricing</a>
+                <a href="booknow.html" id="Booking">Booking</a>
+                <a href="contact.html" id="Contact">Contact</a>
+            </div>
+      <main class="main" role="main">
         <h1>Go Paws</h1>
         <aside>
-            <img src="final_images/hobbies-dog-walking-orig.jpg"> 
+            <figure class="featured-image">
+            <img src="final_images/hobbies-dog-walking-orig.jpg"
+                 alt="home"
+                 srcset="final_images/home-small.jpg 600w,
+                         final_images/home-medium.jpg 800w,
+                         final_images/home-large.jpg 1600w"
+                 >
+            </figure> 
+             About Go Paws
+            <p>Go Paws is an online dog walker company in NYC.</p>
+            <p>It helps people to find a loving dog walker to walk their dogs.</p>
+            What is Dog Walker?
+            <p>A dog walker is a profession that involves a person walking with a dog, usually from the dog's home and then returning the dog back to its home.
+            Walking a dog is part of the daily exercise regime needed in order to keep a dog healthy and happy. </p>
         </aside>
         <article>
+            
+            <figure class="featured-image">
+            <img src="final_images/map.png"
+                 alt="booknow"
+                 srcset="final_images/map-small.jpg 600w,
+                         final_images/map-medium.jpg 800w,
+                         final_images/map-large.jpg 1600w"
+                 >
+            </figure>
+            Where we service:
+            <p>We service all of Manhatten, Queens, and Brooklyn!</p>
             Our Service
             <P>
                 <ul>
@@ -80,22 +112,12 @@
                     <li><a href="puppywalks.html">Puppy Walks and Visits</a></li>
                 </ul>
             </P>
-        </article>
-        <aside>
-            About Go Paws
-            <p>Go Paws is an online dog walker company in NYC.</p>
-            <p>It helps people to find a loving dog walker to walk their dogs.</p>
-            What is Dog Walker?
-            <p>A dog walker is a profession that involves a person walking with a dog, usually from the dog's home and then returning the dog back to its home. </p>
-            <p>Walking a dog is part of the daily exercise regime needed in order to keep a dog healthy and happy. </p>
-        </aside>
         
-        <article>
-            Where we service:
-            <p>We service all of Manhatten, Queens, and Brooklyn!</p>
-            <img src="final_images/nyc-subway-map.jpg">
         </article>
-<!--        <footer>Sign Up</footer>-->
+
+        
+        <footer></footer>
+        </main>
     </body>
 
 

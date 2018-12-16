@@ -1,55 +1,77 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset=utf-8 />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Go Paws</title>
         <link rel="stylesheet" type="text/css" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin:500" rel="stylesheet">
         <style>
-            img{
-                width: 100%;
-                height: 330px;
-            }
+            
             h4{
                 font-size: 25px;
                 margin-top: 10px;
-                text-align: center;
+                text-align: left;
+                font-family: 'Quicksand', sans-serif;
             }
             aside{
-                height: 200px;
+                height: 180px;
                 width: 50%;
                 background-color: #cccccc;
                 float: left;
-                margin-bottom: 60px;
+                margin-bottom: 30px;
                 text-align: center;
-                padding-top: px;
+                padding-top: 10px;
+                font-size: 20px;
+                font-family: 'Cabin', sans-serif;
+                color:#1A5281;
             }
             article{
-                height: 200px;
+                height: 180px;
                 width: 50%;
                 background-color: #cccccc;
                 float: right;
                 margin-bottom: 60px;
                 text-align: center;
+                font-size: 20px;
+                padding-top: 10px;
+                font-family: 'Cabin', sans-serif;
+                color:#1A5281;
             }
             p{
-                padding-left: 0px;
+                padding-bottom: px;
+                font-family: 'Cabin', sans-serif;
+                color: black;
             }
         </style>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="booknow.html">Book Now</a></li>
-                <li><a href="contact.html">Contact Us</a></li> 
-            </ul>
-        </nav>
-        
-            <img src="final_images/p3.jpg" alt="1">
-            <div class="text-block">
-            <header>Pricing</header>
+      
+            <div id="mysidenav" class="sidenav">
+                <a href="index.html" id="Home">Home</a>
+                <a href="pricing.html" id="Pricing">Pricing</a>
+                <a href="booknow.html" id="Booking">Booking</a>
+                <a href="contact.html" id="Contact">Contact</a>
             </div>
+    
+         <main class="main" role="main">
+             <div class="container">
+            
+            <figure class="featured-image">
+            <img src="final_images/p3.jpg"
+                 alt="booknow"
+                 srcset="final_images/pricing-small.jpg 600w,
+                         final_images/pricing-medium.jpg 800w,
+                         final_images/pricing-large.jpg 1600w"
+                 >
+            </figure>
+                 <div class="text-block"> 
+                      <header>Pricing</header>
+                  </div>
+             </div>
+
         <h4>Private Walks</h4>
         <aside>
             
@@ -90,7 +112,8 @@
 				<p>30 min: $20 per walk</p>
                 <p>45 min: $25 per walk</p>
                 <p>60 min: $30 per walk</p>
-        </article>   
+        </article>  
+        </main>
     </body>
 
 

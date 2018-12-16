@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset=utf-8 />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Go Paws</title>
         <link rel="stylesheet" type="text/css" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Cabin:500" rel="stylesheet">
         
     <style>
-        img{
-            width: 100%;
-            height: 330px;
-        }
         
     </style>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="booknow.html">Book Now</a></li>
-                <li><a href="contact.html">Contact Us</a></li> 
-            </ul>
-        </nav>
-            <img src="final_images/booknowimage.jpg" alt="1">
-            <div class="text-block">
-            <header>Book Now</header>
-            </div>
       
+            <div id="mysidenav" class="sidenav">
+                <a href="index.html" id="Home">Home</a>
+                <a href="pricing.html" id="Pricing">Pricing</a>
+                <a href="booknow.html" id="Booking">Booking</a>
+                <a href="contact.html" id="Contact">Contact</a>
+            </div>
+        <main class="main" role="main">
+            <div class="container">
+            <figure class="featured-image">
+            <img src="final_images/booknowimage.jpg"
+                 alt="booknow"
+                 srcset="final_images/book-small.jpg 600w,
+                         final_images/book-medium.jpg 800w,
+                         final_images/book-large.jpg 1600w"
+                 >
+            </figure>
+            <div class="text-block"> 
+                      <header>Book Now</header>
+                  </div>
+             </div>
+
          <section class="col-sm-12">
 				<h2>Booking questions:</h2>
 				<p>When do you need a walk?</p>
@@ -61,7 +70,7 @@
                 <p></p>
                 <button class="button">Save</button>
             </section>
-        
+        </main>
         
     </body>
 
